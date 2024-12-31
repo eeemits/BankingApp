@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "amount": 50.75,
+    "date": "2024-01-01T10:00:00Z",
+    "description": "Grocery shopping at Walmart",
+    "type": "debit",
+    "category": "Groceries",
+    "isSensitive": true
+  },
+  {
+    "id": "2",
+    "amount": 2000,
+    "date": "2024-01-02T12:00:00Z",
+    "description": "Salary for December",
+    "type": "credit",
+    "category": "Income",
+    "isSensitive": false
+  },
+  {
+    "id": "3",
+    "amount": 120.5,
+    "date": "2024-01-03T15:30:00Z",
+    "description": "Electricity bill payment",
+    "type": "debit",
+    "category": "Utilities",
+    "isSensitive": true
+  },
+  {
+    "id": "4",
+    "amount": 75.0,
+    "date": "2024-01-04T09:45:00Z",
+    "description": "Dinner at Olive Garden",
+    "type": "debit",
+    "category": "Dining",
+    "isSensitive": true
+  },
+  {
+    "id": "5",
+    "amount": 500,
+    "date": "2024-01-05T08:20:00Z",
+    "description": "Monthly Rent",
+    "type": "debit",
+    "category": "Rent",
+    "isSensitive": false
+  },
+  {
+    "id": "6",
+    "amount": 100,
+    "date": "2024-01-06T16:15:00Z",
+    "description": "Sold old furniture on Craigslist",
+    "type": "credit",
+    "category": "Miscellaneous",
+    "isSensitive": false
+  },
+  {
+    "id": "7",
+    "amount": 20.99,
+    "date": "2024-01-07T14:00:00Z",
+    "description": "Coffee at Starbucks",
+    "type": "debit",
+    "category": "Dining",
+    "isSensitive": true
+  },
+  {
+    "id": "8",
+    "amount": 40.0,
+    "date": "2024-01-08T11:30:00Z",
+    "description": "Fuel refill at Shell",
+    "type": "debit",
+    "category": "Transportation",
+    "isSensitive": true
+  },
+  {
+    "id": "9",
+    "amount": 150.0,
+    "date": "2024-01-09T17:00:00Z",
+    "description": "Quarterly subscription renewal for Netflix",
+    "type": "debit",
+    "category": "Entertainment",
+    "isSensitive": true
+  },
+  {
+    "id": "10",
+    "amount": 25.5,
+    "date": "2024-01-10T18:45:00Z",
+    "description": "Amazon purchase - Book",
+    "type": "debit",
+    "category": "Shopping",
+    "isSensitive": true
+  },
+  {
+    "id": "11",
+    "amount": 30.0,
+    "date": "2024-01-11T14:00:00Z",
+    "description": "Gym membership renewal",
+    "type": "debit",
+    "category": "Fitness",
+    "isSensitive": true
+  },
+  {
+    "id": "12",
+    "amount": 3000,
+    "date": "2024-01-12T09:00:00Z",
+    "description": "Freelance project payment",
+    "type": "credit",
+    "category": "Income",
+    "isSensitive": false
+  },
+  {
+    "id": "13",
+    "amount": 60.25,
+    "date": "2024-01-13T20:00:00Z",
+    "description": "Dinner at Cheesecake Factory",
+    "type": "debit",
+    "category": "Dining",
+    "isSensitive": true
+  },
+  {
+    "id": "14",
+    "amount": 10.0,
+    "date": "2024-01-14T08:30:00Z",
+    "description": "Morning yoga class",
+    "type": "debit",
+    "category": "Fitness",
+    "isSensitive": true
+  },
+  {
+    "id": "15",
+    "amount": 90.0,
+    "date": "2024-01-15T10:00:00Z",
+    "description": "Phone bill payment",
+    "type": "debit",
+    "category": "Utilities",
+    "isSensitive": false
+  },
+  {
+    "id": "16",
+    "amount": 200,
+    "date": "2024-01-16T15:00:00Z",
+    "description": "Transferred to savings account",
+    "type": "debit",
+    "category": "Savings",
+    "isSensitive": false
+  },
+  {
+    "id": "17",
+    "amount": 150,
+    "date": "2024-01-17T19:30:00Z",
+    "description": "Received cashback from credit card",
+    "type": "credit",
+    "category": "Rewards",
+    "isSensitive": false
+  },
+  {
+    "id": "18",
+    "amount": 12.5,
+    "date": "2024-01-18T13:45:00Z",
+    "description": "Lunch at Subway",
+    "type": "debit",
+    "category": "Dining",
+    "isSensitive": true
+  },
+  {
+    "id": "19",
+    "amount": 1000,
+    "date": "2024-01-19T21:00:00Z",
+    "description": "Received payment for online course",
+    "type": "credit",
+    "category": "Income",
+    "isSensitive": false
+  },
+  {
+    "id": "20",
+    "amount": 50,
+    "date": "2024-01-20T12:00:00Z",
+    "description": "Bought gifts for friends",
+    "type": "debit",
+    "category": "Shopping",
+    "isSensitive": true
+  }
+]

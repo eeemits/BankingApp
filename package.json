@@ -5,13 +5,19 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "ios:device": "npx react-native run-ios --device",
+    "ios:14": "react-native run-ios --simulator=\"iPhone 14\"",
+    "ios:15": "react-native run-ios --simulator=\"iPhone 15 Pro\"",
     "lint": "eslint .",
+    "install:pods": "cd ios && pod install",
     "start": "react-native start",
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.0",
     "react": "18.3.1",
-    "react-native": "0.76.5"
+    "react-native": "0.75",
+    "react-native-biometrics": "^3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
