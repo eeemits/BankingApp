@@ -1,0 +1,186 @@
+[
+  {
+    "id": "tx001",
+    "category": "Utilities",
+    "description": "Electricity Bill",
+    "amount": 120.5,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "UTL-20250101-001",
+    "date": "2025-01-01T10:30:00Z",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "City Power Ltd",
+        "contact": "1800-123-456"
+      },
+      "location": {
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx002",
+    "category": "Rent",
+    "description": "Monthly Apartment Rent",
+    "amount": 1500.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "RNT-20250101-002",
+    "date": "2025-01-01T12:00:00Z",
+    "details": {
+      "paymentMethod": "Bank Transfer",
+      "merchantDetails": {
+        "name": "Greenwood Apartments",
+        "contact": "info@greenwood.com"
+      },
+      "location": {
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA"
+      },
+      "transactionStatus": "Pending"
+    }
+  },
+  {
+    "id": "tx003",
+    "category": "Entertainment",
+    "description": "Movie Tickets",
+    "amount": 45.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "ENT-20250101-003",
+    "date": "2025-01-01T18:45:00Z",
+    "details": {
+      "paymentMethod": "Digital Wallet",
+      "merchantDetails": {
+        "name": "Cineplex Movies",
+        "contact": "support@cineplex.com"
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "WA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx004",
+    "category": "Miscellaneous",
+    "description": "Gift Purchase",
+    "amount": 95.0,
+    "type": "credit",
+    "isDeducted": false,
+    "transactionID": "MSC-20250101-004",
+    "date": "2025-01-01T15:00:00Z",
+    "details": {
+      "paymentMethod": "Debit Card",
+      "merchantDetails": {
+        "name": "Amazon",
+        "contact": "help@amazon.com"
+      },
+      "location": {
+        "city": "San Francisco",
+        "state": "CA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx005",
+    "category": "Utilities",
+    "description": "Water Bill",
+    "amount": 60.25,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "UTL-20250101-005",
+    "date": "2025-01-01T09:15:00Z",
+    "details": {
+      "paymentMethod": "Online Banking",
+      "merchantDetails": {
+        "name": "City Water Dept",
+        "contact": "support@citywater.com"
+      },
+      "location": {
+        "city": "Boston",
+        "state": "MA",
+        "country": "USA"
+      },
+      "transactionStatus": "Processing"
+    }
+  },
+  {
+    "id": "tx006",
+    "category": "Food & Dining",
+    "description": "Dinner at The Italian Place",
+    "amount": 75.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "FOD-20250101-006",
+    "date": "2025-01-01T20:00:00Z",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "The Italian Place",
+        "contact": "contact@italianplace.com"
+      },
+      "location": {
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx007",
+    "category": "Shopping",
+    "description": "Clothes Purchase",
+    "amount": 200.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "SHP-20250101-007",
+    "date": "2025-01-01T14:20:00Z",
+    "details": {
+      "paymentMethod": "Debit Card",
+      "merchantDetails": {
+        "name": "Fashion Store",
+        "contact": "support@fashionstore.com"
+      },
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx008",
+    "category": "Transportation",
+    "description": "Ride-Hailing Service",
+    "amount": 35.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "TRN-20250101-008",
+    "date": "2025-01-01T22:10:00Z",
+    "details": {
+      "paymentMethod": "Digital Wallet",
+      "merchantDetails": {
+        "name": "Lyft",
+        "contact": "support@lyft.com"
+      },
+      "location": {
+        "city": "San Diego",
+        "state": "CA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  }
+]
