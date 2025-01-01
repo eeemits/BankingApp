@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "transactionID": "14813101-9311-463e",
+    "amount": 50.75,
+    "date": "2024-01-01T10:00:00Z",
+    "description": "Grocery shopping at Walmart",
+    "type": "debit",
+    "category": "Groceries",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "2",
+    "transactionID": "e9127d3a-637d-4739-a758",
+    "amount": 2000,
+    "date": "2024-01-02T12:00:00Z",
+    "description": "Salary for December",
+    "type": "credit",
+    "category": "Income",
+    "isSensitive": false,
+    "isDeducted": false
+  },
+  {
+    "id": "3",
+    "transactionID": "af203a66-cda4-482f-94c2",
+    "amount": 120.5,
+    "date": "2024-01-03T15:30:00Z",
+    "description": "Electricity bill payment",
+    "type": "debit",
+    "category": "Utilities",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "4",
+    "transactionID": "c9f58e03-4d73-4a9f-83be-033b474ad4b4",
+    "amount": 75.0,
+    "date": "2024-01-04T09:45:00Z",
+    "description": "Dinner at Olive Garden",
+    "type": "debit",
+    "category": "Dining",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "5",
+    "transactionID": "2b2b5643-9e22-4d91-899f-85fbbd9b158f",
+    "amount": 500,
+    "date": "2024-01-05T08:20:00Z",
+    "description": "Monthly Rent",
+    "type": "debit",
+    "category": "Rent",
+    "isSensitive": false,
+    "isDeducted": true
+  },
+  {
+    "id": "6",
+    "transactionID": "14bfbda4-6a32-42e1-8159-61fcedfcb564",
+    "amount": 100,
+    "date": "2024-01-06T16:15:00Z",
+    "description": "Sold old furniture on Craigslist",
+    "type": "credit",
+    "category": "Miscellaneous",
+    "isSensitive": false,
+    "isDeducted": false
+  },
+  {
+    "id": "7",
+    "transactionID": "9a82c4df-93b9-46b6-84ec-13da488ff368",
+    "amount": 20.99,
+    "date": "2024-01-07T14:00:00Z",
+    "description": "Coffee at Starbucks",
+    "type": "debit",
+    "category": "Dining",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "8",
+    "transactionID": "72654f09-86c7-4316-b94c",
+    "amount": 40.0,
+    "date": "2024-01-08T11:30:00Z",
+    "description": "Fuel refill at Shell",
+    "type": "debit",
+    "category": "Transportation",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "9",
+    "transactionID": "ef4fa2e5-1848-4e58-8b42",
+    "amount": 150.0,
+    "date": "2024-01-09T17:00:00Z",
+    "description": "Quarterly subscription renewal for Netflix",
+    "type": "debit",
+    "category": "Entertainment",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "10",
+    "transactionID": "b827be64-7418-42a2-ae68",
+    "amount": 25.5,
+    "date": "2024-01-10T18:45:00Z",
+    "description": "Amazon purchase - Book",
+    "type": "debit",
+    "category": "Shopping",
+    "isSensitive": true,
+    "isDeducted": true
+  }
+]

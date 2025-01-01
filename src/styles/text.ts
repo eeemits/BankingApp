@@ -1,14 +1,15 @@
-import {TextStyle} from 'react-native';
+import {TextStyle} from "react-native";
 import {
   colorBlack,
   colorGray,
+  colorGreen,
   colorJet,
   colorOrange,
   colorRose,
   colorWhite,
-} from './color';
-import {NunitoBold, NunitoRegular, NunitoSemiBold} from '../constants';
-import {scaleHeight} from '../utils/responsive';
+} from "./color";
+import {NunitoBold, NunitoRegular, NunitoSemiBold} from "../constants";
+import {scaleHeight} from "../utils/responsive";
 import {
   sh10,
   sh12,
@@ -22,14 +23,14 @@ import {
   sh40,
   sh48,
   sh8,
-} from './size';
+} from "./size";
 
-export const fsAlignCenter: TextStyle = {textAlign: 'center'};
-export const fsAlignLeft: TextStyle = {textAlign: 'left'};
-export const fsAlignRight: TextStyle = {textAlign: 'right'};
+export const fsAlignCenter: TextStyle = {textAlign: "center"};
+export const fsAlignLeft: TextStyle = {textAlign: "left"};
+export const fsAlignRight: TextStyle = {textAlign: "right"};
 
 export const fsCapitalize: TextStyle = {
-  textTransform: 'capitalize',
+  textTransform: "capitalize",
 };
 
 export const fsNoLineHeight: TextStyle = {
@@ -37,15 +38,15 @@ export const fsNoLineHeight: TextStyle = {
 };
 
 export const fsTransformNone: TextStyle = {
-  textTransform: 'none',
+  textTransform: "none",
 };
 
 export const fsUnderline: TextStyle = {
-  textDecorationLine: 'underline',
+  textDecorationLine: "underline",
 };
 
 export const fsUppercase: TextStyle = {
-  textTransform: 'uppercase',
+  textTransform: "uppercase",
 };
 
 export const fs10BoldGray3: TextStyle = {
@@ -90,6 +91,12 @@ export const fs10BoldWhite1: TextStyle = {
 
 export const fs10RegBlack2: TextStyle = {
   color: colorBlack._2,
+  fontFamily: NunitoRegular,
+  fontSize: sh10,
+  lineHeight: scaleHeight(10 * 1.6),
+};
+export const fs10RegGreen2: TextStyle = {
+  color: colorGreen._2,
   fontFamily: NunitoRegular,
   fontSize: sh10,
   lineHeight: scaleHeight(10 * 1.6),
@@ -183,8 +190,21 @@ export const fs12RegBlack2: TextStyle = {
   fontSize: sh12,
   lineHeight: scaleHeight(12 * 1.3),
 };
+export const fs12RegGreen2: TextStyle = {
+  color: colorGreen._2,
+  fontFamily: NunitoRegular,
+  fontSize: sh12,
+  lineHeight: scaleHeight(12 * 1.3),
+};
+
 export const fs12SemiGray2: TextStyle = {
   color: colorGray._2,
+  fontFamily: NunitoRegular,
+  fontSize: sh12,
+  lineHeight: scaleHeight(12 * 1.3),
+};
+export const fs12SemiGreen2: TextStyle = {
+  color: colorGreen._2,
   fontFamily: NunitoRegular,
   fontSize: sh12,
   lineHeight: scaleHeight(12 * 1.3),
@@ -231,6 +251,12 @@ export const fs12SemiBoldJett3: TextStyle = {
   lineHeight: scaleHeight(12 * 1.3),
 };
 
+export const fs14BoldWhite2: TextStyle = {
+  color: colorWhite._2,
+  fontFamily: NunitoBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
 export const fs14BoldBlack2: TextStyle = {
   color: colorBlack._2,
   fontFamily: NunitoBold,
@@ -279,6 +305,7 @@ export const fs16BoldBlack1: TextStyle = {
   fontSize: sh16,
   lineHeight: scaleHeight(16 * 1.48),
 };
+
 export const fs14BoldOrange4: TextStyle = {
   color: colorOrange._4,
   fontFamily: NunitoBold,
@@ -321,6 +348,18 @@ export const fs16RegBlack2: TextStyle = {
   lineHeight: scaleHeight(16 * 1.48),
 };
 
+export const fs16RegGray1: TextStyle = {
+  color: colorGray._1,
+  fontFamily: NunitoRegular,
+  fontSize: sh16,
+  lineHeight: scaleHeight(16 * 1.48),
+};
+export const fs16RegGray2: TextStyle = {
+  color: colorGray._2,
+  fontFamily: NunitoRegular,
+  fontSize: sh16,
+  lineHeight: scaleHeight(16 * 1.48),
+};
 export const fs16RegGray3: TextStyle = {
   color: colorGray._3,
   fontFamily: NunitoRegular,
