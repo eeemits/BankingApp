@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* BankingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BankingAppTests.m */; };
+		028D2C49B8F84FFC8B839D24 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48F03DF5311B4962B74BB986 /* NunitoSans-ExtraLight.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		159A2EC2EFC64E94B74E7E6F /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EF00CBB8EC947B685C3E26A /* NunitoSans-Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8ED16369BD706BD8F7AFA246 /* libPods-BankingApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 395474F05D519548BFA86CA4 /* libPods-BankingApp.a */; };
+		90433E11557646BD92784667 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70E62B6CF5724BCBAC68C6D6 /* NunitoSans-ExtraBold.ttf */; };
 		965C57A4385AD23CD70BD0BA /* libPods-BankingApp-BankingAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CC599D1DCD7AAAABA36555 /* libPods-BankingApp-BankingAppTests.a */; };
 		A66791DE7097EC8C0238523F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		AD3B799D5B2B4F72AC07342F /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D74F571B43C43BD8BE98114 /* NunitoSans-SemiBold.ttf */; };
+		ADFA8380CA824C42B5968023 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D698237FB04D4B7D814BD3D3 /* NunitoSans-Regular.ttf */; };
+		BA9106EAD7F944E0957CBE92 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00766E95A04C42C68FB7732B /* NunitoSans-Black.ttf */; };
+		C73666987A494E368A1EFB44 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A24B19B59161457DAE50D3F7 /* NunitoSans-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00766E95A04C42C68FB7732B /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Black.ttf"; path = "../src/assets/fonts/NunitoSans-Black.ttf"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* BankingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BankingAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankingAppTests.m; sourceTree = "<group>"; };
@@ -40,11 +48,17 @@
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = BankingApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		24AA5B97E417B9D410E0FDE3 /* Pods-BankingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankingApp.debug.xcconfig"; path = "Target Support Files/Pods-BankingApp/Pods-BankingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		395474F05D519548BFA86CA4 /* libPods-BankingApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankingApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F03DF5311B4962B74BB986 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-ExtraLight.ttf"; path = "../src/assets/fonts/NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
 		53CC599D1DCD7AAAABA36555 /* libPods-BankingApp-BankingAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankingApp-BankingAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		596A20B49F1373059BDBCDD8 /* Pods-BankingApp-BankingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankingApp-BankingAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BankingApp-BankingAppTests/Pods-BankingApp-BankingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70E62B6CF5724BCBAC68C6D6 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-ExtraBold.ttf"; path = "../src/assets/fonts/NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7EF00CBB8EC947B685C3E26A /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Light.ttf"; path = "../src/assets/fonts/NunitoSans-Light.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BankingApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D74F571B43C43BD8BE98114 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-SemiBold.ttf"; path = "../src/assets/fonts/NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		A24B19B59161457DAE50D3F7 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Bold.ttf"; path = "../src/assets/fonts/NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
 		A95B96AD03E9D153FBFBE687 /* Pods-BankingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankingApp.release.xcconfig"; path = "Target Support Files/Pods-BankingApp/Pods-BankingApp.release.xcconfig"; sourceTree = "<group>"; };
 		BEF35FA6C299F784151BC672 /* Pods-BankingApp-BankingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankingApp-BankingAppTests.release.xcconfig"; path = "Target Support Files/Pods-BankingApp-BankingAppTests/Pods-BankingApp-BankingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D698237FB04D4B7D814BD3D3 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Regular.ttf"; path = "../src/assets/fonts/NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -125,6 +139,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				C84D3AF4E8BD4598B0DC0D7E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +164,21 @@
 				BEF35FA6C299F784151BC672 /* Pods-BankingApp-BankingAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C84D3AF4E8BD4598B0DC0D7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00766E95A04C42C68FB7732B /* NunitoSans-Black.ttf */,
+				A24B19B59161457DAE50D3F7 /* NunitoSans-Bold.ttf */,
+				70E62B6CF5724BCBAC68C6D6 /* NunitoSans-ExtraBold.ttf */,
+				48F03DF5311B4962B74BB986 /* NunitoSans-ExtraLight.ttf */,
+				7EF00CBB8EC947B685C3E26A /* NunitoSans-Light.ttf */,
+				D698237FB04D4B7D814BD3D3 /* NunitoSans-Regular.ttf */,
+				8D74F571B43C43BD8BE98114 /* NunitoSans-SemiBold.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +277,13 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A66791DE7097EC8C0238523F /* PrivacyInfo.xcprivacy in Resources */,
+				BA9106EAD7F944E0957CBE92 /* NunitoSans-Black.ttf in Resources */,
+				C73666987A494E368A1EFB44 /* NunitoSans-Bold.ttf in Resources */,
+				90433E11557646BD92784667 /* NunitoSans-ExtraBold.ttf in Resources */,
+				028D2C49B8F84FFC8B839D24 /* NunitoSans-ExtraLight.ttf in Resources */,
+				159A2EC2EFC64E94B74E7E6F /* NunitoSans-Light.ttf in Resources */,
+				ADFA8380CA824C42B5968023 /* NunitoSans-Regular.ttf in Resources */,
+				AD3B799D5B2B4F72AC07342F /* NunitoSans-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
