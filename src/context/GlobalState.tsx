@@ -6,18 +6,21 @@ export interface IInitialState {
   transactions: Transaction[];
   addCurrentTransactions: (transaction: Transaction) => void;
   updateTransaction: (transaction: Transaction[]) => void;
+  isAuthenticated: boolean;
+  setAuthenticating: (authenticating: boolean) => void;
 }
 
 interface GlobalProviderProps {
-  // define props here
   children?: any;
 }
 
 const initialState: IInitialState = {
   currentTransaction: null,
   transactions: [],
+  isAuthenticated: false,
   addCurrentTransactions: () => {},
   updateTransaction: () => {},
+  setAuthenticating: () => {},
 };
 
 // create Context
@@ -39,11 +42,17 @@ export const GlobalProvider = (
     setState({...state, transactions});
   };
 
+  const setAuthenticating = (isAuthenticated: boolean) => {
+    setState({...state, isAuthenticated});
+  };
+
   return (
     <GlobalContext.Provider
       value={{
         addCurrentTransactions,
         updateTransaction,
+        setAuthenticating,
+        isAuthenticated: state.isAuthenticated,
         currentTransaction: state.currentTransaction,
         transactions: state.transactions,
       }}>
