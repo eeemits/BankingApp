@@ -2,7 +2,6 @@ import {
   View,
   Text,
   RefreshControl,
-  SafeAreaView,
   TouchableOpacity,
   ViewStyle,
 } from "react-native";
@@ -28,14 +27,11 @@ import {
   sw10,
   sh8,
   colorWhite,
-  flexChild,
   colorOrange,
   flexGrow,
   sh2,
   sw4,
-  sh40,
   colorBlue,
-  sw8,
   sw12,
   sh12,
   flexRowSbSb,
@@ -59,30 +55,32 @@ import {
 import {isArrayNotEmpty, formatDateTime} from "../../utils";
 import transactionData from "../../constants/transaction.json";
 import {GlobalContext} from "../../context/GlobalState";
+import {useNavigation} from "@react-navigation/native";
+import {NavigationProps} from "../../types/route";
 
-export const DashboardScreen: FunctionComponent = () => {
+export const DashboardPage: FunctionComponent = ({}) => {
+  const navigation = useNavigation<NavigationProps>();
+
   const [currentPage, setCurrentPage] = useState(1); // Track the current page
   const [refreshing, setRefreshing] = useState(false); // Track the pull-to-refresh state
   const [transactionType, setTransactionType] =
     useState<TransactionType>("History");
-  const {
-    addCurrentTransactions,
-    updateTransaction,
-    transactions,
-    currentTransaction,
-  } = useContext(GlobalContext);
+  const {addCurrentTransactions, updateTransaction, transactions} =
+    useContext(GlobalContext);
 
   const ITEMS_PER_PAGE = 5;
 
   const onRefresh = useCallback(() => {
     setRefreshing(true);
 
-    setTimeout(() => {
-      const reversedData = [...transactionData].reverse();
+    setTimeout(async () => {
+      const reversedData = [...transactionData].sort((a, b) =>
+        b.date.localeCompare(a.date),
+      );
       updateTransaction(reversedData as Transaction[]);
       setCurrentPage(1);
       setRefreshing(false);
-    }, 1500);
+    }, 1000);
   }, []);
 
   const filteredTransactions = transactions.filter(transaction => {
@@ -115,6 +113,7 @@ export const DashboardScreen: FunctionComponent = () => {
 
   const handleNavigateDetails = (transaction: Transaction) => {
     addCurrentTransactions(transaction);
+    navigation.navigate("TransactionDetails");
   };
 
   const visibleTransactions = filteredTransactions.slice(
@@ -176,15 +175,13 @@ export const DashboardScreen: FunctionComponent = () => {
           paddingHorizontal={sw4}
           isHorizontal={true}
         />
-        <CustomSpacer space={sh10} />
         <View
           style={{
-            height: sh40,
             backgroundColor: colorBlue._3,
             borderRadius: sw10,
-            marginHorizontal: sw8,
             paddingHorizontal: sw12,
             paddingVertical: sh12,
+            marginVertical: sh10,
           }}>
           <View style={flexRowSbSb}>
             <Text style={fs12BoldWhite1}>Recent Transactions</Text>
@@ -195,63 +192,68 @@ export const DashboardScreen: FunctionComponent = () => {
         </View>
         {isArrayNotEmpty(visibleTransactions) &&
           visibleTransactions.map((transaction: Transaction) => (
-            <CardContainer
-              style={{paddingVertical: sh10, paddingHorizontal: sw10}}
-              key={transaction.id}
-              backgroundColor={colorWhite._1}
-              onPress={() => handleNavigateDetails(transaction)}>
-              <Fragment>
-                <View style={flexRow}>
-                  <CustomFlexSpacer />
-                  <Icon
-                    name={
-                      transaction.isDeducted
-                        ? "arrow-back-circle"
-                        : "arrow-forward-circle"
-                    }
-                    color={
-                      transaction.isDeducted ? colorRose._4 : colorGreen._1
-                    }
-                    size={sw24}
-                  />
-                </View>
+            <Fragment key={transaction.id}>
+              <CardContainer
+                style={{paddingVertical: sh10, paddingHorizontal: sw10}}
+                key={transaction.id}
+                backgroundColor={colorWhite._1}
+                onPress={() => handleNavigateDetails(transaction)}>
                 <Fragment>
-                  <View style={{...flexRowSbSb, paddingVertical: sh2}}>
-                    <Text style={fs16BoldBlack2}>{transaction.category}</Text>
-                    <SensitiveText amount={transaction.amount} />
+                  <View style={flexRow}>
+                    <CustomFlexSpacer />
+                    <Icon
+                      name={
+                        transaction.isDeducted
+                          ? "arrow-back-circle"
+                          : "arrow-forward-circle"
+                      }
+                      color={
+                        transaction.isDeducted ? colorRose._4 : colorGreen._1
+                      }
+                      size={sw24}
+                    />
                   </View>
-                  <View style={{...flexRowSbSb, paddingVertical: sh8}}>
-                    <Text style={fs12BoldGray2}>{transaction.description}</Text>
-                    <View
-                      style={{
-                        paddingHorizontal: sw4,
-                        paddingVertical: sh2,
-                        borderRadius: sw4,
-                        backgroundColor:
-                          transaction.type === "debit"
-                            ? colorGreen._4
-                            : colorRose._1,
-                      }}>
-                      <Text style={fs10RegWhite2}>{transaction.type}</Text>
+                  <Fragment>
+                    <View style={{...flexRowSbSb, paddingVertical: sh2}}>
+                      <Text style={fs16BoldBlack2}>{transaction.category}</Text>
+                      <SensitiveText amount={transaction.amount} />
                     </View>
-                  </View>
-                  <View style={flexRowSbSb}>
-                    <Text style={fs10RegGray4}>Transaction ID</Text>
-                    <Text style={fs10RegGray4}>
-                      {formatDateTime(transaction.date, "date")}
-                    </Text>
-                  </View>
-                  <View style={flexRowSbSb}>
-                    <Text style={fs10RegGray4}>
-                      {transaction.transactionID}
-                    </Text>
-                    <Text style={fs10RegGray4}>
-                      {formatDateTime(transaction.date, "time")}
-                    </Text>
-                  </View>
+                    <View style={{...flexRowSbSb, paddingVertical: sh8}}>
+                      <Text style={fs12BoldGray2}>
+                        {transaction.description}
+                      </Text>
+                      <View
+                        style={{
+                          paddingHorizontal: sw4,
+                          paddingVertical: sh2,
+                          borderRadius: sw4,
+                          backgroundColor:
+                            transaction.type === "debit"
+                              ? colorGreen._4
+                              : colorRose._1,
+                        }}>
+                        <Text style={fs10RegWhite2}>{transaction.type}</Text>
+                      </View>
+                    </View>
+                    <View style={flexRowSbSb}>
+                      <Text style={fs10RegGray4}>Transaction ID</Text>
+                      <Text style={fs10RegGray4}>
+                        {formatDateTime(transaction.date, "date")}
+                      </Text>
+                    </View>
+                    <View style={flexRowSbSb}>
+                      <Text style={fs10RegGray4}>
+                        {transaction.transactionID}
+                      </Text>
+                      <Text style={fs10RegGray4}>
+                        {formatDateTime(transaction.date, "time")}
+                      </Text>
+                    </View>
+                  </Fragment>
                 </Fragment>
-              </Fragment>
-            </CardContainer>
+              </CardContainer>
+              <CustomSpacer space={sh10} />
+            </Fragment>
           ))}
 
         {currentPage * ITEMS_PER_PAGE < filteredTransactions.length && (
