@@ -73,7 +73,9 @@ export const SensitiveText: FunctionComponent<SensitiveTextProps> = ({
         {isMasked ? "****" : `MYR ${amount.toFixed(2)}`}
       </Text>
       <CustomSpacer space={sw2} isHorizontal={true} />
-      <Icon name="eye" size={sw12} color={colorJet._4} {...iconStyle} />
+      {isMasked ? (
+        <Icon name="eye" size={sw12} color={colorJet._4} {...iconStyle} />
+      ) : null}
     </TouchableOpacity>
   );
 };

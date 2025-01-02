@@ -39,6 +39,8 @@ export const CardContainer: FunctionComponent<CardContainerProps> = ({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
+    paddingVertical: sh10,
+    paddingHorizontal: sw10,
   };
 
   const defaultTextStyle: TextStyle = {
@@ -58,7 +60,7 @@ export const CardContainer: FunctionComponent<CardContainerProps> = ({
 
   return (
     <TouchableOpacity onPress={handlePress} disabled={disabledBtn}>
-      <View style={{paddingVertical: sh10, paddingHorizontal: sw10}}>
+      <View>
         <View style={defaultStyle}>
           {title && <Text style={defaultTextStyle}>{title}</Text>}
           {children}

@@ -8,6 +8,8 @@
     "isDeducted": true,
     "transactionID": "UTL-20250101-001",
     "date": "2025-01-01T10:30:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT987654321",
     "details": {
       "paymentMethod": "Credit Card",
       "merchantDetails": {
@@ -31,6 +33,8 @@
     "isDeducted": true,
     "transactionID": "RNT-20250101-002",
     "date": "2025-01-01T12:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT765432109",
     "details": {
       "paymentMethod": "Bank Transfer",
       "merchantDetails": {
@@ -54,6 +58,8 @@
     "isDeducted": true,
     "transactionID": "ENT-20250101-003",
     "date": "2025-01-01T18:45:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT543216789",
     "details": {
       "paymentMethod": "Digital Wallet",
       "merchantDetails": {
@@ -77,6 +83,8 @@
     "isDeducted": false,
     "transactionID": "MSC-20250101-004",
     "date": "2025-01-01T15:00:00Z",
+    "from": "ACCT987654321",
+    "to": "ACCT123456789",
     "details": {
       "paymentMethod": "Debit Card",
       "merchantDetails": {
@@ -100,6 +108,8 @@
     "isDeducted": true,
     "transactionID": "UTL-20250101-005",
     "date": "2025-01-01T09:15:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT654321987",
     "details": {
       "paymentMethod": "Online Banking",
       "merchantDetails": {
@@ -123,6 +133,8 @@
     "isDeducted": true,
     "transactionID": "FOD-20250101-006",
     "date": "2025-01-01T20:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT876543210",
     "details": {
       "paymentMethod": "Credit Card",
       "merchantDetails": {
@@ -146,6 +158,8 @@
     "isDeducted": true,
     "transactionID": "SHP-20250101-007",
     "date": "2025-01-01T14:20:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT678543210",
     "details": {
       "paymentMethod": "Debit Card",
       "merchantDetails": {
@@ -169,6 +183,8 @@
     "isDeducted": true,
     "transactionID": "TRN-20250101-008",
     "date": "2025-01-01T22:10:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT567890432",
     "details": {
       "paymentMethod": "Digital Wallet",
       "merchantDetails": {
@@ -178,6 +194,432 @@
       "location": {
         "city": "San Diego",
         "state": "CA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx009",
+    "category": "Travel",
+    "description": "Flight Ticket",
+    "amount": 350.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "TRV-20250101-009",
+    "date": "2025-01-01T08:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT456789123",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "Delta Airlines",
+        "contact": "support@delta.com"
+      },
+      "location": {
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx010",
+    "category": "Health",
+    "description": "Pharmacy Purchase",
+    "amount": 40.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "HLT-20250101-010",
+    "date": "2025-01-01T13:30:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT789654321",
+    "details": {
+      "paymentMethod": "Cash",
+      "merchantDetails": {
+        "name": "Health Pharmacy",
+        "contact": "info@healthpharma.com"
+      },
+      "location": {
+        "city": "Miami",
+        "state": "FL",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+
+  {
+    "id": "tx011",
+    "category": "Insurance",
+    "description": "Car Insurance Premium",
+    "amount": 250.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "INS-20250101-011",
+    "date": "2025-01-01T10:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT987654321",
+    "details": {
+      "paymentMethod": "Online Banking",
+      "merchantDetails": {
+        "name": "State Farm Insurance",
+        "contact": "support@statefarm.com"
+      },
+      "location": {
+        "city": "Denver",
+        "state": "CO",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx012",
+    "category": "Entertainment",
+    "description": "Streaming Service Subscription",
+    "amount": 15.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "ENT-20250101-012",
+    "date": "2025-01-01T12:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT765432109",
+    "details": {
+      "paymentMethod": "Digital Wallet",
+      "merchantDetails": {
+        "name": "Netflix",
+        "contact": "support@netflix.com"
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "CA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx013",
+    "category": "Shopping",
+    "description": "Grocery Purchase",
+    "amount": 80.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "SHP-20250101-013",
+    "date": "2025-01-01T14:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT543216789",
+    "details": {
+      "paymentMethod": "Debit Card",
+      "merchantDetails": {
+        "name": "Walmart",
+        "contact": "support@walmart.com"
+      },
+      "location": {
+        "city": "Dallas",
+        "state": "TX",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx014",
+    "category": "Travel",
+    "description": "Hotel Booking",
+    "amount": 200.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "TRV-20250101-014",
+    "date": "2025-01-01T16:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT654321987",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "Marriott Hotels",
+        "contact": "support@marriott.com"
+      },
+      "location": {
+        "city": "Washington D.C.",
+        "state": "DC",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx015",
+    "category": "Food & Dining",
+    "description": "Breakfast at The Pancake House",
+    "amount": 20.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "FOD-20250101-015",
+    "date": "2025-01-01T08:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT876543210",
+    "details": {
+      "paymentMethod": "Digital Wallet",
+      "merchantDetails": {
+        "name": "The Pancake House",
+        "contact": "support@pancakehouse.com"
+      },
+      "location": {
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx016",
+    "category": "Transportation",
+    "description": "Taxi ride to downtown",
+    "amount": 15.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "TRN-20250102-016",
+    "date": "2025-01-02T09:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT987654321",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "Yellow Taxi",
+        "contact": "support@yellowtaxi.com"
+      },
+      "location": {
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx017",
+    "category": "Shopping",
+    "description": "New shoes purchase",
+    "amount": 100.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "SHO-20250103-017",
+    "date": "2025-01-03T10:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT111111111",
+    "details": {
+      "paymentMethod": "Digital Wallet",
+      "merchantDetails": {
+        "name": "Sneaker World",
+        "contact": "support@sneakerworld.com"
+      },
+      "location": {
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx018",
+    "category": "Entertainment",
+    "description": "Movie night snacks",
+    "amount": 60.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "ENT-20250104-018",
+    "date": "2025-01-04T11:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT222222222",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "Cinema World",
+        "contact": "support@cinemaworld.com"
+      },
+      "location": {
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx019",
+    "category": "Household",
+    "description": "Laundry service",
+    "amount": 30.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "HSH-20250105-019",
+    "date": "2025-01-05T12:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT333333333",
+    "details": {
+      "paymentMethod": "Digital Wallet",
+      "merchantDetails": {
+        "name": "Clean & Fresh",
+        "contact": "support@cleanfresh.com"
+      },
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx020",
+    "category": "Savings",
+    "description": "Monthly savings deposit",
+    "amount": 250.0,
+    "type": "credit",
+    "isDeducted": false,
+    "transactionID": "SAV-20250106-020",
+    "date": "2025-01-06T13:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT444444444",
+    "details": {
+      "paymentMethod": "Direct Deposit",
+      "merchantDetails": {
+        "name": "Bank of America",
+        "contact": "support@bankofamerica.com"
+      },
+      "location": {
+        "city": "San Francisco",
+        "state": "CA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx021",
+    "category": "Groceries",
+    "description": "Groceries at Walmart",
+    "amount": 80.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "GRO-20250107-021",
+    "date": "2025-01-07T14:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT555555555",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "Walmart",
+        "contact": "support@walmart.com"
+      },
+      "location": {
+        "city": "Dallas",
+        "state": "TX",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx022",
+    "category": "Dining",
+    "description": "Lunch at McDonald's",
+    "amount": 10.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "DIN-20250108-022",
+    "date": "2025-01-08T15:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT666666666",
+    "details": {
+      "paymentMethod": "Digital Wallet",
+      "merchantDetails": {
+        "name": "McDonald's",
+        "contact": "support@mcdonalds.com"
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "WA",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx023",
+    "category": "Entertainment",
+    "description": "Concert tickets",
+    "amount": 120.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "ENT-20250109-023",
+    "date": "2025-01-09T16:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT777777777",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "Ticketmaster",
+        "contact": "support@ticketmaster.com"
+      },
+      "location": {
+        "city": "Denver",
+        "state": "CO",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx024",
+    "category": "Shopping",
+    "description": "New phone purchase",
+    "amount": 500.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "SHO-20250110-024",
+    "date": "2025-01-10T17:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT888888888",
+    "details": {
+      "paymentMethod": "Digital Wallet",
+      "merchantDetails": {
+        "name": "Apple Store",
+        "contact": "support@apple.com"
+      },
+      "location": {
+        "city": "Miami",
+        "state": "FL",
+        "country": "USA"
+      },
+      "transactionStatus": "Completed"
+    }
+  },
+  {
+    "id": "tx025",
+    "category": "Travel",
+    "description": "Flight to Hawaii",
+    "amount": 800.0,
+    "type": "debit",
+    "isDeducted": true,
+    "transactionID": "TRV-20250111-025",
+    "date": "2025-01-11T18:00:00Z",
+    "from": "ACCT123456789",
+    "to": "ACCT999999999",
+    "details": {
+      "paymentMethod": "Credit Card",
+      "merchantDetails": {
+        "name": "American Airlines",
+        "contact": "support@aa.com"
+      },
+      "location": {
+        "city": "Honolulu",
+        "state": "HI",
         "country": "USA"
       },
       "transactionStatus": "Completed"
