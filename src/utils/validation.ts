@@ -11,7 +11,7 @@ export const isArrayNotEmpty = (value: unknown[] | undefined | null) => {
 
 // Format the date
 
-export const formatDateTime = (value: string, formatType: "time" | "date") => {
+export const formatDateTime = (value: string, formatType?: "time" | "date") => {
   const date = new Date(value);
 
   const formattedDate = date.toLocaleDateString("en-US", {
@@ -24,6 +24,10 @@ export const formatDateTime = (value: string, formatType: "time" | "date") => {
     minute: "2-digit",
     hour12: true,
   });
+
+  if (formatType === undefined) {
+    return `${formattedDate} ${formattedTime}`;
+  }
 
   return formatType === "date" ? formattedDate : formattedTime;
 };
