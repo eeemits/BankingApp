@@ -1,6 +1,7 @@
 import {TextStyle} from "react-native";
 import {
   colorBlack,
+  colorBlue,
   colorGray,
   colorGreen,
   colorJet,
@@ -298,6 +299,54 @@ export const fs14RegGray1: TextStyle = {
   fontSize: sh14,
   lineHeight: scaleHeight(14 * 1.3),
 };
+export const fs14BoldBlue3: TextStyle = {
+  color: colorBlue._3,
+  fontFamily: NunitoBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
+export const fs14SemiBoldBlack3: TextStyle = {
+  color: colorBlack._3,
+  fontFamily: NunitoSemiBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
+export const fs14SemiBoldWhite1: TextStyle = {
+  color: colorWhite._1,
+  fontFamily: NunitoSemiBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
+export const fs14SemiBoldBlue3: TextStyle = {
+  color: colorBlue._3,
+  fontFamily: NunitoSemiBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
+export const fs14SemiBoldGray1: TextStyle = {
+  color: colorGray._1,
+  fontFamily: NunitoSemiBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
+export const fs14SemiBoldGreen1: TextStyle = {
+  color: colorGreen._1,
+  fontFamily: NunitoSemiBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
+export const fs14SemiBoldGreen2: TextStyle = {
+  color: colorGreen._2,
+  fontFamily: NunitoSemiBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
+export const fs14SemiBoldRose1: TextStyle = {
+  color: colorRose._1,
+  fontFamily: NunitoSemiBold,
+  fontSize: sh14,
+  lineHeight: scaleHeight(14 * 1.3),
+};
 
 export const fs16BoldBlack1: TextStyle = {
   color: colorBlack._1,
@@ -391,6 +440,20 @@ export const fs16RegWhite1: TextStyle = {
 export const fs16SemiBoldBlack1: TextStyle = {
   color: colorBlack._1,
   fontFamily: NunitoSemiBold,
+  fontSize: sh16,
+  lineHeight: scaleHeight(16 * 1.48),
+};
+
+export const fs16SemiBoldBlue3: TextStyle = {
+  color: colorBlue._3,
+  fontFamily: NunitoSemiBold,
+  fontSize: sh16,
+  lineHeight: scaleHeight(16 * 1.48),
+};
+
+export const fs16BoldBlue3: TextStyle = {
+  color: colorBlue._3,
+  fontFamily: NunitoBold,
   fontSize: sh16,
   lineHeight: scaleHeight(16 * 1.48),
 };
