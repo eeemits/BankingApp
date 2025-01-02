@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "tx001",
     "transactionID": "14813101-9311-463e",
     "amount": 50.75,
     "date": "2024-01-01T10:00:00Z",
@@ -11,7 +11,7 @@
     "isDeducted": true
   },
   {
-    "id": "2",
+    "id": "tx002",
     "transactionID": "e9127d3a-637d-4739-a758",
     "amount": 2000,
     "date": "2024-01-02T12:00:00Z",
@@ -22,7 +22,7 @@
     "isDeducted": false
   },
   {
-    "id": "3",
+    "id": "tx003",
     "transactionID": "af203a66-cda4-482f-94c2",
     "amount": 120.5,
     "date": "2024-01-03T15:30:00Z",
@@ -33,7 +33,7 @@
     "isDeducted": true
   },
   {
-    "id": "4",
+    "id": "tx004",
     "transactionID": "c9f58e03-4d73-4a9f-83be-033b474ad4b4",
     "amount": 75.0,
     "date": "2024-01-04T09:45:00Z",
@@ -44,7 +44,7 @@
     "isDeducted": true
   },
   {
-    "id": "5",
+    "id": "tx005",
     "transactionID": "2b2b5643-9e22-4d91-899f-85fbbd9b158f",
     "amount": 500,
     "date": "2024-01-05T08:20:00Z",
@@ -55,7 +55,7 @@
     "isDeducted": true
   },
   {
-    "id": "6",
+    "id": "tx006",
     "transactionID": "14bfbda4-6a32-42e1-8159-61fcedfcb564",
     "amount": 100,
     "date": "2024-01-06T16:15:00Z",
@@ -66,7 +66,7 @@
     "isDeducted": false
   },
   {
-    "id": "7",
+    "id": "tx007",
     "transactionID": "9a82c4df-93b9-46b6-84ec-13da488ff368",
     "amount": 20.99,
     "date": "2024-01-07T14:00:00Z",
@@ -77,7 +77,7 @@
     "isDeducted": true
   },
   {
-    "id": "8",
+    "id": "tx008",
     "transactionID": "72654f09-86c7-4316-b94c",
     "amount": 40.0,
     "date": "2024-01-08T11:30:00Z",
@@ -88,7 +88,7 @@
     "isDeducted": true
   },
   {
-    "id": "9",
+    "id": "tx009",
     "transactionID": "ef4fa2e5-1848-4e58-8b42",
     "amount": 150.0,
     "date": "2024-01-09T17:00:00Z",
@@ -99,13 +99,178 @@
     "isDeducted": true
   },
   {
-    "id": "10",
+    "id": "tx010",
     "transactionID": "b827be64-7418-42a2-ae68",
     "amount": 25.5,
     "date": "2024-01-10T18:45:00Z",
     "description": "Amazon purchase - Book",
     "type": "debit",
     "category": "Shopping",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "tx011",
+    "transactionID": "ec38f4f8-6b8f-49d4-9e02",
+    "amount": 300.0,
+    "date": "2024-01-11T09:00:00Z",
+    "description": "Car insurance payment",
+    "type": "debit",
+    "category": "Insurance",
+    "isSensitive": false,
+    "isDeducted": true
+  },
+  {
+    "id": "tx012",
+    "transactionID": "62b26b6e-c2c3-4d14-86d8",
+    "amount": 19.99,
+    "date": "2024-01-12T13:15:00Z",
+    "description": "Spotify Premium subscription",
+    "type": "debit",
+    "category": "Entertainment",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "tx013",
+    "transactionID": "f72c569d-b10f-41c4-828f",
+    "amount": 75.0,
+    "date": "2024-01-13T18:30:00Z",
+    "description": "Dinner at The Cheesecake Factory",
+    "type": "debit",
+    "category": "Dining",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "tx014",
+    "transactionID": "73da4a79-c6f1-4cb7-97d2",
+    "amount": 50.0,
+    "date": "2024-01-14T15:45:00Z",
+    "description": "Charity donation",
+    "type": "debit",
+    "category": "Charity",
+    "isSensitive": false,
+    "isDeducted": true
+  },
+  {
+    "id": "tx015",
+    "transactionID": "9f5cfa8a-823d-4c4d-bd8b",
+    "amount": 450.0,
+    "date": "2024-01-15T10:00:00Z",
+    "description": "Flight ticket to Chicago",
+    "type": "debit",
+    "category": "Travel",
+    "isSensitive": false,
+    "isDeducted": true
+  },
+  {
+    "id": "tx016",
+    "transactionID": "4e7d882c-4e33-4c71-9e03",
+    "amount": 15.0,
+    "date": "2024-01-16T11:45:00Z",
+    "description": "Parking fee",
+    "type": "debit",
+    "category": "Transportation",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "tx017",
+    "transactionID": "2c8f6d7a-83a9-45b5-a5d9",
+    "amount": 1000.0,
+    "date": "2024-01-17T09:00:00Z",
+    "description": "Bonus payment",
+    "type": "credit",
+    "category": "Income",
+    "isSensitive": false,
+    "isDeducted": false
+  },
+  {
+    "id": "tx018",
+    "transactionID": "63b5f8de-73d1-47b8-b312",
+    "amount": 60.0,
+    "date": "2024-01-18T20:15:00Z",
+    "description": "Movie night snacks",
+    "type": "debit",
+    "category": "Entertainment",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "tx019",
+    "transactionID": "12fcd6b8-7a3c-4a28-b6d9",
+    "amount": 30.0,
+    "date": "2024-01-19T07:30:00Z",
+    "description": "Laundry service",
+    "type": "debit",
+    "category": "Household",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "tx020",
+    "transactionID": "2f86cd3b-a8c4-47d6-b3fa",
+    "amount": 250.0,
+    "date": "2024-01-20T09:45:00Z",
+    "description": "Monthly savings deposit",
+    "type": "credit",
+    "category": "Savings",
+    "isSensitive": false,
+    "isDeducted": false
+  },
+  {
+    "id": "tx021",
+    "transactionID": "3f81dc7a-b2a8-456d-b6f9",
+    "amount": 70.0,
+    "date": "2024-01-21T13:00:00Z",
+    "description": "Groceries at Target",
+    "type": "debit",
+    "category": "Groceries",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "tx022",
+    "transactionID": "7c52f1a8-a36b-48a8-cde9",
+    "amount": 25.0,
+    "date": "2024-01-22T18:45:00Z",
+    "description": "Coffee at Dunkin' Donuts",
+    "type": "debit",
+    "category": "Dining",
+    "isSensitive": true,
+    "isDeducted": true
+  },
+  {
+    "id": "tx023",
+    "transactionID": "8f9cd7a3-b47d-46d8-d2fc",
+    "amount": 200.0,
+    "date": "2024-01-23T11:30:00Z",
+    "description": "New shoes purchase",
+    "type": "debit",
+    "category": "Shopping",
+    "isSensitive": false,
+    "isDeducted": true
+  },
+  {
+    "id": "tx024",
+    "transactionID": "94b2f6a8-c3a1-47d7-b9f6",
+    "amount": 100.0,
+    "date": "2024-01-24T15:45:00Z",
+    "description": "Gym membership renewal",
+    "type": "debit",
+    "category": "Fitness",
+    "isSensitive": false,
+    "isDeducted": true
+  },
+  {
+    "id": "tx025",
+    "transactionID": "a3f8d6b2-87b9-46c8-d8fa",
+    "amount": 35.0,
+    "date": "2024-01-25T10:00:00Z",
+    "description": "Taxi ride to downtown",
+    "type": "debit",
+    "category": "Transportation",
     "isSensitive": true,
     "isDeducted": true
   }
