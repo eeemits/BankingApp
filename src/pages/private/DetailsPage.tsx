@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import {GlobalContext} from "../../context/GlobalState";
-import details from "../../constants/transactionDetails.json";
+import details from "../../network/transactionDetails.json";
 import {
   CardContainer,
   CustomSpacer,
@@ -73,7 +73,7 @@ export const DetailsPage: FunctionComponent = () => {
   const cardSectionList: SectionContainerList[] = [
     {
       label: "Transaction Information",
-      subLabel: "Hide Info",
+      subLabel: "Additional Information",
     },
     {
       label: "Transaction ID",
