@@ -25,9 +25,7 @@ export const formatDateTime = (value: string, formatType?: "time" | "date") => {
     hour12: true,
   });
 
-  if (formatType === undefined) {
-    return `${formattedDate} ${formattedTime}`;
-  }
+  if (formatType === undefined) return `${formattedDate} ${formattedTime}`;
 
   return formatType === "date" ? formattedDate : formattedTime;
 };
