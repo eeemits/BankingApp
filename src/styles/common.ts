@@ -1,5 +1,3 @@
-import {colorTransparent} from "./color";
-
 export const alignFlexStart = {alignItems: "flex-start"} as const;
 export const alignItemsEnd = {alignItems: "flex-end"} as const;
 export const alignItemsStart = {alignItems: "flex-start"} as const;
@@ -58,7 +56,6 @@ export const autoHeight = {height: "auto"} as const;
 
 export const noMargin = {margin: 0} as const;
 export const noPadding = {padding: 0} as const;
-export const noBGColor = {backgroundColor: colorTransparent} as const;
 export const noHorizontalPadding = {paddingLeft: 0, paddingRight: 0} as const;
 export const rowCenterVertical = {...centerVertical, ...flexRow} as const;
 

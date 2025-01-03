@@ -4,7 +4,8 @@ import {NativeStackNavigationProp} from "@react-navigation/native-stack";
 export interface INavigationParamsList extends ParamListBase {
   Dashboard: undefined;
   TransactionDetails: undefined;
-  SignUp: undefined;
+  Login: undefined;
+  Landing: undefined;
 }
 
 export type NavigationProps = NativeStackNavigationProp<INavigationParamsList>;
