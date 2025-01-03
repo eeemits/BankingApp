@@ -5,3 +5,4 @@ export * from "./View";
 export * from "./CustomText";
 export * from "./CustomList/ScrollableList";
 export * from "./GlobalError";
+export * from "./CustomButton";

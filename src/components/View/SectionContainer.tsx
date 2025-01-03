@@ -5,13 +5,13 @@ import {
   fs18BoldBlack2,
   fs14BoldBlue3,
   flexChild,
-  sw400,
   sh20,
   sw18,
   rowCenterVertical,
   flexWrap,
   centerHV,
   sw8,
+  fullWidth,
 } from "../../styles";
 import {SectionContainerList} from "../../types/transaction";
 import {isArrayNotEmpty} from "../../utils";
@@ -28,7 +28,7 @@ export const SectionContainer: FunctionComponent<SectionContainerProps> = ({
 }) => {
   const style = {
     ...flexChild,
-    maxWidth: sw400,
+    ...fullWidth,
   };
   const defaultStyle: ViewStyle = containerStyle
     ? {...style, ...containerStyle}
