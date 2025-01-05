@@ -1,5 +1,5 @@
-import React, {FunctionComponent, useContext} from "react";
-import {Text, View, TouchableOpacity, Alert, ViewStyle} from "react-native";
+import React, {FunctionComponent, useContext, useEffect, useState} from "react";
+import {Text, View, ViewStyle} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import ReactNativeBiometrics, {BiometryTypes} from "react-native-biometrics";
 import {
@@ -13,75 +13,62 @@ import {
   sw4,
   sh2,
   sw25,
-  fs16BoldWhite1,
   fs18BoldGray3,
   fs24BoldBlack2,
   fs16RegGray3,
   sh8,
   sh32,
 } from "../../styles";
-import {LoginResponse} from "../../types/user";
 import {GlobalContext} from "../../context/GlobalState";
+import {CustomButton} from "../../components";
+import {useNavigation} from "@react-navigation/native";
+import {NavigationProps} from "../../types/route";
 
 export const LandingPage: FunctionComponent = () => {
-  const {setAuthenticating} = useContext(GlobalContext);
-  const verifyUserCredentials = async (): Promise<LoginResponse> => {
-    try {
-      const response = await fetch("https://dummyjson.com/auth/login", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-          username: "emilys",
-          password: "emilyspass",
-          expiresInMins: 30,
-        }),
-        credentials: "include",
-      });
+  const navigation = useNavigation<NavigationProps>();
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+  const {setAuthenticating} = useContext(GlobalContext);
+  const [isAvailable, setIsAvailable] = useState(false);
+
+  const handleDeviceIsAvailable = async () => {
+    try {
+      const rnBiometrics = new ReactNativeBiometrics();
+
+      const {available, biometryType} = await rnBiometrics.isSensorAvailable();
+      if (available) {
+        return {
+          available,
+          biometryType,
+          rnBiometrics: await rnBiometrics.createKeys(),
+        };
       }
 
-      return response.json();
+      return {available, biometryType};
     } catch (error) {
-      console.error("Error verifying user credentials:", error);
-      throw error;
+      console.log(error);
+      return {available: false, biometryType: undefined};
     }
   };
 
   const handleAuthentication = async () => {
-    const {accessToken} = await verifyUserCredentials();
+    const storedToken = await AsyncStorage.getItem("accessToken");
+    if (storedToken) {
+      const token = JSON.parse(storedToken);
+      const {accessToken, publicKey} = token;
 
-    const rnBiometrics = new ReactNativeBiometrics();
+      if (!accessToken) return;
 
-    const {available, biometryType} = await rnBiometrics.isSensorAvailable();
+      if (publicKey) {
+        const rnBiometrics = new ReactNativeBiometrics();
+        const {success} = await rnBiometrics.simplePrompt({
+          promptMessage: "Authenticate with Face ID",
+        });
 
-    if (available && biometryType === BiometryTypes.FaceID) {
-      Alert.alert(
-        "Face ID",
-        "Would you like to enable Face ID authentication for the next time?",
-        [
-          {
-            text: "Yes please",
-            onPress: async () => {
-              const {publicKey} = await rnBiometrics.createKeys();
-              const storage = {accessToken, publicKey};
+        if (!success) return;
+      }
 
-              await AsyncStorage.setItem(
-                "accessToken",
-                JSON.stringify(storage),
-              );
-            },
-          },
-          {text: "Cancel", style: "cancel"},
-        ],
-      );
+      setAuthenticating(true);
     }
-
-    const storage = {accessToken};
-
-    await AsyncStorage.setItem("accessToken", JSON.stringify(storage));
-    setAuthenticating(true);
   };
 
   const buttonStyle: ViewStyle = {
@@ -96,6 +83,24 @@ export const LandingPage: FunctionComponent = () => {
     elevation: sh5,
   };
 
+  useEffect(() => {
+    const availableDevice = async () => {
+      const {available, biometryType} = (await handleDeviceIsAvailable()) ?? {};
+      if (available && biometryType === BiometryTypes.FaceID) {
+        const storedToken = await AsyncStorage.getItem("accessToken");
+
+        if (!storedToken) {
+          setIsAvailable(false);
+          return;
+        }
+        const token = JSON.parse(storedToken);
+        const {accessToken, publicKey} = token;
+        setIsAvailable(accessToken && publicKey);
+      }
+    };
+    availableDevice();
+  }, []);
+
   return (
     <View style={{...flexChild, ...centerHV}}>
       <View style={centerVertical}>
@@ -104,11 +109,18 @@ export const LandingPage: FunctionComponent = () => {
         <Text style={{...fs16RegGray3, paddingVertical: sh8}}>Spend Cash</Text>
       </View>
       <View style={{paddingVertical: sh32}}>
-        <TouchableOpacity
-          style={buttonStyle}
-          onPress={async () => await handleAuthentication()}>
-          <Text style={fs16BoldWhite1}>GET STARTED</Text>
-        </TouchableOpacity>
+        {isAvailable ? (
+          <CustomButton
+            containerStyle={buttonStyle}
+            title="Retry Biometrics"
+            onPress={async () => await handleAuthentication()}
+          />
+        ) : null}
+        <CustomButton
+          containerStyle={buttonStyle}
+          title="Sign In with passkey"
+          onPress={() => navigation.navigate("Login")}
+        />
       </View>
     </View>
   );

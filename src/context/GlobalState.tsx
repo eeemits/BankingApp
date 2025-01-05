@@ -23,7 +23,6 @@ const initialState: IInitialState = {
   setAuthenticating: () => {},
 };
 
-// create Context
 export const GlobalContext = createContext<IInitialState>(initialState);
 
 // provider components. build components
@@ -32,10 +31,8 @@ export const GlobalProvider = (
 ) => {
   const [state, setState] = useState(initialState);
 
-  // To do
   const addCurrentTransactions = (transaction: Transaction) => {
     setState({...state, currentTransaction: transaction});
-    // call the function
   };
 
   const updateTransaction = (transactions: Transaction[]) => {

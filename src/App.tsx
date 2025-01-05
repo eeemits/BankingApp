@@ -4,6 +4,8 @@ import ErrorBoundary from "react-native-error-boundary";
 import {ErrorFallbackComponent} from "./components";
 import {SafeAreaView} from "react-native-safe-area-context";
 import {MainRoutes} from "./navigation";
+import {GlobalProvider} from "./context/GlobalState";
+import {NavigationContainer} from "@react-navigation/native";
 
 export const App: FunctionComponent = () => {
   const handleJSErrorForErrorBoundary = (error: any, stackTrace: string) => {
@@ -14,7 +16,9 @@ export const App: FunctionComponent = () => {
       onError={handleJSErrorForErrorBoundary}
       FallbackComponent={ErrorFallbackComponent}>
       <SafeAreaView style={{backgroundColor: colorWhite._3, ...flexChild}}>
-        <MainRoutes />
+        <GlobalProvider>
+          <MainRoutes />
+        </GlobalProvider>
       </SafeAreaView>
     </ErrorBoundary>
   );

@@ -53,7 +53,7 @@ import {
   TransactionList,
 } from "../../types/transaction";
 import {isArrayNotEmpty, formatDateTime} from "../../utils";
-import transactionData from "../../constants/transaction.json";
+import transactionData from "../../network/transaction.json";
 import {GlobalContext} from "../../context/GlobalState";
 import {useNavigation} from "@react-navigation/native";
 import {NavigationProps} from "../../types/route";
@@ -194,7 +194,10 @@ export const DashboardPage: FunctionComponent = ({}) => {
           visibleTransactions.map((transaction: Transaction) => (
             <Fragment key={transaction.id}>
               <CardContainer
-                style={{paddingVertical: sh10, paddingHorizontal: sw10}}
+                style={{
+                  paddingVertical: sh10,
+                  paddingHorizontal: sw10,
+                }}
                 key={transaction.id}
                 backgroundColor={colorWhite._1}
                 onPress={() => handleNavigateDetails(transaction)}>

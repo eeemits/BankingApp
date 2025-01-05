@@ -6,7 +6,7 @@ import {DetailsPage} from "../pages/private/DetailsPage";
 
 const {Screen, Navigator} = createNativeStackNavigator<INavigationParamsList>();
 
-export const PublicRoute: FunctionComponent = () => {
+export const PrivateRoute: FunctionComponent = () => {
   return (
     <Navigator
       screenOptions={{headerShown: false}}

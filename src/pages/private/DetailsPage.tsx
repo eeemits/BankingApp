@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import {GlobalContext} from "../../context/GlobalState";
-import details from "../../constants/transactionDetails.json";
+import details from "../../network/transactionDetails.json";
 import {
   CardContainer,
   CustomSpacer,
@@ -70,16 +70,22 @@ export const DetailsPage: FunctionComponent = () => {
     width: "100%",
   };
 
+  const commonSectionContainerList: SectionContainerList = {
+    label: "",
+    subLabel: "",
+    labelStyle: fs12SemiBoldJett3,
+    subLabelStyle: fs12BoldBlack2,
+  };
+
   const cardSectionList: SectionContainerList[] = [
     {
       label: "Transaction Information",
-      subLabel: "Hide Info",
+      subLabel: "Additional Information",
     },
     {
+      ...commonSectionContainerList,
       label: "Transaction ID",
       subLabel: currentDetails?.transactionID ?? "N/A",
-      labelStyle: fs12SemiBoldJett3,
-      subLabelStyle: fs12BoldBlack2,
       iconStyle: {name: "barcode", color: colorBlue._4},
     },
     {
@@ -94,45 +100,39 @@ export const DetailsPage: FunctionComponent = () => {
       iconStyle: {name: "home", color: colorJet._4, size: sw16},
     },
     {
+      ...commonSectionContainerList,
       label: "Date and Time",
       subLabel: currentDetails ? formatDateTime(currentDetails.date) : "N/A",
-      labelStyle: fs12SemiBoldJett3,
-      subLabelStyle: fs12BoldBlack2,
       iconStyle: {name: "calendar", color: colorBlue._4},
     },
     {
+      ...commonSectionContainerList,
       label: "From",
       subLabel: currentDetails?.from ?? "N/A",
-      labelStyle: fs12SemiBoldJett3,
-      subLabelStyle: fs12BoldBlack2,
       iconStyle: {name: "person-stalker", color: colorBlue._4},
     },
     {
+      ...commonSectionContainerList,
       label: "To Account",
       subLabel: currentDetails?.to ?? "N/A",
-      labelStyle: fs12SemiBoldJett3,
-      subLabelStyle: fs12BoldBlack2,
       iconStyle: {name: "icon_agile_scrum", color: colorBlue._4},
     },
     {
+      ...commonSectionContainerList,
       label: "Contact",
       subLabel: currentDetails?.details?.merchantDetails.contact ?? "N/A",
-      labelStyle: fs12SemiBoldJett3,
-      subLabelStyle: fs12BoldBlack2,
       iconStyle: {name: "id-card", color: colorBlue._4},
     },
     {
+      ...commonSectionContainerList,
       label: "Payment Method",
       subLabel: currentDetails?.details?.paymentMethod ?? "N/A",
-      labelStyle: fs12SemiBoldJett3,
-      subLabelStyle: fs12BoldBlack2,
       iconStyle: {name: "card", color: colorBlue._4},
     },
     {
+      ...commonSectionContainerList,
       label: "Transaction status",
       subLabel: currentDetails?.details?.transactionStatus ?? "N/A",
-      labelStyle: fs12SemiBoldJett3,
-      subLabelStyle: fs12BoldBlack2,
       iconStyle: {name: "stats-chart", color: colorBlue._4},
     },
   ];
